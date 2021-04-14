@@ -1,39 +1,109 @@
+*{
+  box-sizing: inherit;
+}
+
+nav{
+  display: block;
+}
+section{
+  display: block;
+}
+a{
+  background-color: transparent;
+  font-weight: 300;
+  color: #1565c0;
+  text-decoration: none;
+}
 body{
-
-  background-color: #1A1E23;
-  font-family: 'Lato', sans-serif;
+  font-family: Merriweather,Georgia,serif;
+  font-size: 1.6em;
+  font-weight: 300;
+  line-height: 1.8em;
 }
 
-.backgroundimage {
-  width: 400px;
-  height: 300px;
-  background: url("aaa.jpg");
-  background-size: cover;
-  margin: 0 auto 100px;
+.colorscheme{
+  color: #dadada;
+  background-color: #212121;
 }
 
-.darken{
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.active{
-  color : red;
-  font-family: 'Lato', sans-serif;
-
-}
-
-a {color:white;}         /* Unvisited link  */
-a:visited {color:white;} /* Visited link    */
-a:hover {color:white;}   /* Mouse over link */
-a:active {color:white;}  /* Selected link   */
-
-/*
-body{
+.wrapper{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 }
-*/
+
+.container{
+  margin: 0 auto;
+  max-width: 90rem;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navigation{
+  height: 6rem;
+  width: 100%;
+}
+
+.navigation .navigation-title{
+  height: 6rem;
+  width: 100%;
+}
+
+.navigation-title{
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.navigation a{
+  display: inline;
+  font-size: 1.6rem;
+  font-family: Lato,Helvetica,sans-serif;
+  font-weight: 700;
+  line-height: 6rem;
+  color: #dadada;
+}
+
+.navigation .navigation-list{
+  float: right;
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.navigation-title .navigation-list{
+  float: right;
+  list-style: none;
+  list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.navigation .navigation-list .navigation-item{
+  float: left;
+  margin: 0;
+  position: relative;
+}
+
+.navigation .navigation-list .navigation-item a{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+li{
+  display: list-item;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
