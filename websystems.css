@@ -1,0 +1,39 @@
+body{
+
+  background-color: #1A1E23;
+  font-family: 'Lato', sans-serif;
+}
+
+.backgroundimage {
+  width: 400px;
+  height: 300px;
+  background: url("aaa.jpg");
+  background-size: cover;
+  margin: 0 auto 100px;
+}
+
+.darken{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.active{
+  color : red;
+  font-family: 'Lato', sans-serif;
+
+}
+
+a {color:white;}         /* Unvisited link  */
+a:visited {color:white;} /* Visited link    */
+a:hover {color:white;}   /* Mouse over link */
+a:active {color:white;}  /* Selected link   */
+
+/*
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+*/
